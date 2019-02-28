@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.kevin.shoppingmall.dao.UserMapper">
+
+    <!-- 实体与数据库对应 -->
+    <resultMap id="shoppingUser" type="cn.kevin.shoppingmall.entity.User">
+        <result column="id" property="Id" />
+        <result column="nick_name" property="nickName" />
+    </resultMap>
+
+    <insert id="insert" parameterType="cn.kevin.shoppingmall.entity.User"
+            useGeneratedKeys="true">
+        INSERT INTO user (id,nick_name, avater) VALUES (#{id},#{nickName},#{image})
+    </insert>
+
+
+</mapper>

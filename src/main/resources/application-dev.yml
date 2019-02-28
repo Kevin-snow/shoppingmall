@@ -1,0 +1,13 @@
+
+
+mybatis:
+  type-aliases-package: cn.kevin.shoppingmall.entity
+  mapper-locations: classpath:mapper/*mapper.xml
+
+spring:
+  datasource:
+    username: root
+    password: 6789@jkl
+    url: jdbc:mysql://localhost:3306/shopmall?serverTimezone=UTC&characterEncoding=utf-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
