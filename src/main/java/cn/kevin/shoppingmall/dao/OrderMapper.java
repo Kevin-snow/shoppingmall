@@ -13,4 +13,6 @@ public interface OrderMapper {
      * @param user
      */
     public void insertOrder(User user);
+
+    public void selectOrder();
 }
